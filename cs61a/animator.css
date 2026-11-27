@@ -194,8 +194,26 @@ html, body { width: 100%; height: 100%; overflow: hidden; }
 /*
 20261115 Q10
 */
-.controls-bar{
+.controls-bar{ /*  20261127 */
   position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: calc(100% - 24px);
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(26,26,46,0.85);
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #3a3a5e;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  z-index: 10;
+  color: #d4c5a0;
+  font-size: 13px;
+  /* position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
@@ -209,7 +227,16 @@ html, body { width: 100%; height: 100%; overflow: hidden; }
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   z-index: 10;
   color:#d4c5a0;
-  font-size: 13px;
+  font-size: 13px; */
+}
+
+.icon-btn {/*  20261127 */
+  white-space: nowrap;
+}
+.icon-btn.active-btn {
+  background: #4a4a8a;
+  border-color: #89ddff;
+  color: #ffffff;
 }
 
 .shape_slider{
